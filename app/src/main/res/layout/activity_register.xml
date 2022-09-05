@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aaa"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="284dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="🏡Registrarse"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblRut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📌Rut:"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtRut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="12.345.678-9"
+                    android:inputType="textPhonetic"
+                    android:maxLength="9"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📌Nombre:"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Santiago"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblApellidoPat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📌1er Apelllido:"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtApellidoPat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Moya"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblApellidoMat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📌2do Apelllido:"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtApellidoMat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Aljaro"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblEdad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📌Edad:"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtEdad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblGenero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📌Genero:"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spnGnero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblTelefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📌Teléfono:"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtTelefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="912345678"
+                    android:inputType="phone"
+                    android:maxLength="9"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblDireccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📌Direccion:"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtDireccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Las Rosas 123"
+                    android:inputType="textPostalAddress"
+                    android:maxLength="9"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📌Correo:"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="nombre@email.com"
+                    android:inputType="textPostalAddress"
+                    android:maxLength="9"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnRegistrarse"
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="👋Registrarse"
+            android:onClick="onButtonClicked"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
