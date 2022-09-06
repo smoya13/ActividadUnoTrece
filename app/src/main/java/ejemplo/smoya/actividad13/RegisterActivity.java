@@ -2,9 +2,11 @@ package ejemplo.smoya.actividad13;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -13,15 +15,14 @@ public class RegisterActivity extends AppCompatActivity {
     private TextView txtRut, txtNombre, txtApellidoPat, txtApellidoMat, txtEdad, txtTelefono, txtDireccion, txtCorreo;
     private String rut, nombre, apellidoPat, apellidoMat, direccion, correo;
     private int edad, telefono;
+    private Button btnLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-    }
-
-    public void onButtonClicked(View view) {
         // Asignamos los valores ingresados a las variables.
+        btnLogin = (Button) findViewById(R.id.btnRegistrarse);
         txtRut = findViewById(R.id.txtRut);
         txtNombre = findViewById(R.id.txtNombre);
         txtApellidoPat = findViewById(R.id.txtApellidoPat);
@@ -30,7 +31,9 @@ public class RegisterActivity extends AppCompatActivity {
         txtTelefono = findViewById(R.id.txtTelefono);
         txtDireccion = findViewById(R.id.txtDireccion);
         txtCorreo = findViewById(R.id.txtCorreo);
+    }
 
+    public void onButtonClicked(View view) {
         // Los asignamos a las variables legibles.
         rut = String.valueOf(txtRut);
         nombre = String.valueOf(txtNombre);
@@ -41,5 +44,12 @@ public class RegisterActivity extends AppCompatActivity {
         direccion = String.valueOf(txtApellidoMat);
         correo = String.valueOf(txtCorreo);
 
+        // Saltar al login
+        abrirActivity();
+    }
+
+    public void abrirActivity(){
+        Intent intent = new Intent(this, login.class);
+        startActivity(intent);
     }
 }
