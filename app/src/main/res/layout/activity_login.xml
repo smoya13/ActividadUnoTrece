@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="🏡Registrarse"
+            android:text="🚀Inicia sesión"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="28dp"
@@ -62,172 +62,31 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/lblNombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="📌Nombre:"
-                    android:textColor="@color/white"
-                    android:textSize="19dp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/txtNombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Santiago"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/white"
-                    android:textSize="19dp" />
-            </TableRow>
+                android:layout_height="match_parent"/>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/lblApellidoPat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="📌1er Apelllido:"
-                    android:textColor="@color/white"
-                    android:textSize="19dp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/txtApellidoPat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Moya"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/white"
-                    android:textSize="19dp" />
-            </TableRow>
+                android:layout_height="match_parent"/>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/lblApellidoMat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="📌2do Apelllido:"
-                    android:textColor="@color/white"
-                    android:textSize="19dp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/txtApellidoMat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Aljaro"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/white"
-                    android:textSize="19dp" />
-            </TableRow>
+                android:layout_height="match_parent"/>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/lblEdad"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="📌Edad:"
-                    android:textColor="@color/white"
-                    android:textSize="19dp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/txtEdad"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="100"
-                    android:inputType="number"
-                    android:maxLength="3"
-                    android:textColor="@color/white"
-                    android:textSize="19dp" />
-            </TableRow>
+                android:layout_height="match_parent"/>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/lblGenero"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="📌Genero:"
-                    android:textColor="@color/white"
-                    android:textSize="19dp"
-                    android:textStyle="bold" />
-
-                <Spinner
-                    android:id="@+id/spnGnero"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:spinnerMode="dropdown" />
-
-
-            </TableRow>
+                android:layout_height="match_parent"/>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/lblTelefono"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="📌Teléfono:"
-                    android:textColor="@color/white"
-                    android:textSize="19dp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/txtTelefono"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="912345678"
-                    android:inputType="phone"
-                    android:maxLength="9"
-                    android:textColor="@color/white"
-                    android:textSize="19dp" />
-            </TableRow>
+                android:layout_height="match_parent"/>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/lblDireccion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="📌Direccion:"
-                    android:textColor="@color/white"
-                    android:textSize="19dp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/txtDireccion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Las Rosas 123"
-                    android:inputType="textPostalAddress"
-                    android:maxLength="9"
-                    android:textColor="@color/white"
-                    android:textSize="19dp" />
-            </TableRow>
+                android:layout_height="match_parent"/>
 
             <TableRow
                 android:layout_width="match_parent"
@@ -258,13 +117,23 @@
         </TableLayout>
 
         <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:onClick="onButtonClicked"
+            android:text="👭Inicia sesión"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <Button
             android:id="@+id/btnRegistrarse"
             android:layout_width="200dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
             android:textStyle="bold"
             android:textAllCaps="true"
-            android:text="👋Registrarse"/>
+            android:text="👋Registrate"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
